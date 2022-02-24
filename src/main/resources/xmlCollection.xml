@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="collect" class="com.iisn.collectionSpring.StudentCollections">
+        <property name="studentDetail" >
+            <list>
+                <ref bean="sharan"></ref>
+                <ref bean="gokul"></ref>
+                <ref bean="sharanish"></ref>
+                <ref bean="vinoth"></ref>
+            </list>
+        </property>
+    </bean>
+    <bean id="sharan" class="com.iisn.collectionSpring.StudentDetails">
+        <property name="registerNo" value="1001"/>
+        <property name="name" value="Sharan"/>
+        <property name="Address" value="Chennai"/>
+        <property name="mobileNo" value="933029029"/>
+    </bean>
+    <bean id="gokul" class="com.iisn.collectionSpring.StudentDetails">
+        <property name="registerNo" value="1002"/>
+        <property name="name" value="gokul"/>
+        <property name="Address" value="Chennai"/>
+        <property name="mobileNo" value="3444"/>
+    </bean>
+    <bean id="sharanish" class="com.iisn.collectionSpring.StudentDetails">
+        <property name="registerNo" value="1003"/>
+        <property name="name" value="Sharanish"/>
+        <property name="Address" value="Chennai"/>
+        <property name="mobileNo" value="23423234"/>
+    </bean>
+    <bean id="vinoth" class="com.iisn.collectionSpring.StudentDetails">
+        <property name="registerNo" value="1004"/>
+        <property name="name" value="vinoth"/>
+        <property name="Address" value="Chennai"/>
+        <property name="mobileNo" value="232342"/>
+    </bean>
+</beans>
